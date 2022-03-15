@@ -32,33 +32,22 @@ def primer_menu ():
     cd = str(input('Ingrese el nombre de la ciudad(ingresar en mayúsculas): '))
 
     if pt == 'COCA CODO SINCLAIR' and cd =='QUITO':
-    #C-Quito
         tarifa_coca_quito = consumo_energia['Coca Codo Sinclair']['Quito']['tarifa']
-
         print('Consumo total:', sum(consumo_energia['Coca Codo Sinclair']['Quito']['consumos']),'MWh')
-
     elif pt == 'COCA CODO SINCLAIR' and cd == 'GUAYAQUIL':
-        #C-Guayquil
         tarifa_coca_guayaquil = consumo_energia['Coca Codo Sinclair']['Guayaquil']['tarifa']
-
         print('Consumo total:', sum(consumo_energia['Coca Codo Sinclair']['Guayaquil']['consumos']),'MWh')
 
     elif pt == 'SOPLADORA' and cd == 'GUAYAQUIL':
-    #S-Guayaquil
         tarifa_sopladora_guayaquil = consumo_energia['Sopladora']['Guayaquil']['tarifa']
-
         print('Consumo total:', sum(consumo_energia['Sopladora']['Guayaquil']['consumos']),'MWh')
 
     elif pt == 'SOPLADORA' and cd == 'QUITO':
-    #S-Quito
         tarifa_sopladora_quito = consumo_energia['Sopladora']['Quito']['tarifa']
-        
         print('Consumo total:', sum(consumo_energia['Sopladora']['Quito']['consumos']),'MWh')
 
     elif pt == 'SOPLADORA' and cd == 'LOJA':
-    #S-Loja
         tarifa_sopladora_loja = consumo_energia['Sopladora']['Loja']['tarifa']
-
         print('Consumo total:', sum(consumo_energia['Sopladora']['Loja']['consumos']),'MWh')
 
     else:
@@ -102,7 +91,6 @@ def tr_menu ():
         print('¡La región no tiene registros!')
     else:
         print('¡Error!')
-
 
 op = -1
 while op != 0:
